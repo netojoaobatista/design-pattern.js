@@ -62,7 +62,8 @@ o comportamento associado com o estado do Context.
 Implementação:
 --------------
 
-*State.js*
+State.js
+
 	/**
 	 * Define a interface para encapsular o comportamento associado com um estado
 	 * específico.
@@ -96,7 +97,8 @@ Implementação:
 		operationD: function(context){console.log("operação indisponível");}
 	};
 	
-*ConcreteStateA.js*
+ConcreteStateA.js
+
 	/**
 	 * Implementação do estado A
 	 * @constructor
@@ -113,7 +115,8 @@ Implementação:
 		context.changeState(new ConcreteStateB());
 	};
 	
-*ConcreteStateB.js*
+ConcreteStateB.js
+
 	/**
 	 * Implementação do estado B
 	 * @constructor
@@ -130,7 +133,8 @@ Implementação:
 		context.changeState(new ConcreteStateC());
 	};
 	
-*ConcreteStateC.js*
+ConcreteStateC.js
+
 	/**
 	 * Implementação do estado C
 	 * @constructor
@@ -147,7 +151,8 @@ Implementação:
 		context.changeState(new ConcreteStateD());
 	};
 	
-*ConcreteStateD.js*
+ConcreteStateD.js
+
 	/**
 	 * Implementação do estado D
 	 * @constructor
@@ -164,7 +169,8 @@ Implementação:
 		context.changeState(new ConcreteStateA());
 	};
 
-*Context.js*
+Context.js
+
 	/**
 	 * Interface que os Clients conhecem e sabem utilizar, poderia ser uma conexão
 	 * de banco de dados, FTP, SSH, etc.
@@ -216,7 +222,8 @@ Implementação:
 		}
 	};
 	
-*Client.js*
+Client.js
+
 	/**
 	 * Um client que utiliza a interface do Context para fazer alguma coisa.
 	 */
